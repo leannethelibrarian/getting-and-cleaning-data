@@ -42,7 +42,7 @@ myvars <- c("subject", "activity", grep("mean\\(\\)|std\\(\\)", names(tidyData),
 tidyData <- tidyData[myvars]
 
 ## Save the tidy dataset
-write.table(tidyData, file="tidydata.txt", row.names.=FALSE)
+write.table(tidyData, file="tidydata.txt", row.names=FALSE)
 
 ## Create a second tidy dataset by averaging each variable for each activity
 ## and each subject (step 5)
